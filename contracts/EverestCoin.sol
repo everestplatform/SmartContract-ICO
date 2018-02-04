@@ -6,4 +6,8 @@ contract EverestCoin is MintableToken {
   string public name = "Everest Coin";
   string public symbol = "EVE";
   uint8 public decimals = 18;
+
+  function  EverestCoin() public {
+        owner = msg.sender;
+    }
 }
